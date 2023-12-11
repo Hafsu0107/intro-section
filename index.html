@@ -11,6 +11,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="style.css">
 
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
@@ -26,44 +27,107 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="header">
+   <nav>
+    <div class="nav-container">
+      <div class="nav-left">
         <img src="images/logo.svg" alt="logo" />
-        <nav>
-          <ul>
-            <li>
-              Features
-              <img src="images/icon-arrow-down.svg" alt="icon" />
-              <div class="sub-link"></div>
-            </li>
-            <li>Company</li>
-            <li>Careers</li>
-            <li>About</li>
-          </ul>
-        </nav>
-        <button>Login</button>
-        <button>Register</button>
+        <ul class="nav-links">
+          <li>
+            Features
+            <img src="images/icon-arrow-down.svg" alt="icon" />
+            <div class="sub-menu-one">
+              <p class="sub-link">
+                <img src="images/icon-todo.svg" alt="icon" />
+                Todo list
+              </p>
+              <p class="sub-link">
+                <img src="images/icon-calendar.svg" alt="icon" />
+                Calender
+              </p>
+              <p class="sub-link">
+                <img src="images/icon-reminders.svg" alt="icon" />
+                Reminders
+              </p>
+              <p class="sub-link">
+                <img src="images/icon-planning.svg" alt="icon" />
+                Plannig
+              </p>
+            </div>
+          </li>
+          <li>
+            Company
+            <img src="images/icon-arrow-down.svg" alt="icon" />
+            <div class="sub-menu two">
+              <p class="sub-link">History</p>
+              <p class="sub-link">Our Team</p>
+              <p class="sub-link">Blog</p>
+            </div>
+          </li>
+          <li>Careers</li>
+          <li>About</li>
       </div>
-      <div class="info">
-        <h1>Make <br />remote work</h1>
-        <p>
+
+      <div class="mobile-menu-btn">
+        <img src="images/icon-menu.svg" alt="icon" />
+      </div>
+      <div class="mobile-menu">
+        <div class="mobile-links">
+          <li>
+            <p>Features<img src="images/icon-arrow-down.svg" alt="icon" /></p>
+            <div class="mobile-sub">
+              <p class="sub-link">
+                <img src="images/icon-todo.svg" alt="icon" />Todo list
+              </p>
+              <p class="sub-link">
+                <img src="images/icon-calendar.svg" alt="icon" />Calendar
+              </p>
+              <p class="sub-link">
+                <img src="images/icon-reminders.svg" alt="icon" />Reminders
+              </p>
+              <p class="sub-link">
+                <img src="images/icon-planning.svg" alt="icon" />Planning
+              </p>
+            </div>
+          </li>
+          <li>
+            <p>Company<img src="images/icon-arrow-down.svg" alt="icon" /></p>
+            <div class="mobile-sub">
+              <p class="sub-link">History</p>
+              <p class="sub-link">Our Team</p>
+              <p class="sub-link">Blog</p>
+            </div>
+          </li>
+          <li>Careers</li>
+          <li>About</li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <button class="transparent-btn">Login</button>
+        <button class="outlined-btn">Register</button>
+      
+      </div>
+   </div>
+  </nav>
+    <main>
+      <div class="main-container">
+        <div class="main-left">
+       <h1 class="main-heading">Make <br />remote work</h1>
+        <p class="main-content">
           Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.
         </p>
-        <button>Learn more</button>
-      </div>
-      <img
-        src="images/image-hero-desktop.png"
-        alt="dekstop-img"
-        width="450px"
-      />
-      <div class="companys">
+        <button class="primary-btn">Learn more</button>
+      <div class="logoes">
         <img src="images/client-databiz.svg" alt="databiz" />
         <img src="images/client-audiophile.svg" alt="audiophile" />
         <img src="images/client-meet.svg" alt="meet" />
         <img src="images/client-maker.svg" alt="maker" />
       </div>
     </div>
+    <div class="main-right">
+      <img src="images/image-hero-desktop.png" alt="hero" width="450px">
+    </div>
+  </main>
 
     <div class="attribution">
       Challenge by
